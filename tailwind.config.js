@@ -5,8 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['DM Sans', 'sans-serif'], // Menambahkan font DM Sans
+        'poppins' : ['Poppins'] // Menambahkan font Poppins
+      },
+      colors: {
+        'primary': '#3ECF4C', // Menambahkan warna primary
+        'secondary': '#E2FCD9',
+        'form': '#F1F1F1',
+      },
+    },
   },
   plugins: [],
 }
+
 

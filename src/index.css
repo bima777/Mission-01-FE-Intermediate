@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply font-poppins font-bold text-[32px]/[35.2px] text-slate-900 text-center;
+  }
+
+  label {
+    @apply font-sans font-normal text-base/[22.4px] text-slate-600;
+  }
+
+  input[type = "text"],
+  input[type = "email"],
+  input[type = "tel"],
+  input[type = "password"]
+   {
+    @apply px-[10px] py-1 h-12 w-full border rounded-md;
+  }
+
+  input[type="submit"] {
+    @apply font-sans font-bold text-base/[22.4px] gap-4 border-0 rounded-[10px] h-[42px] w-full cursor-pointer;
+  }
+}
+
+@layer components {
+  .btn-login {
+    @apply bg-primary text-white;
+  }
+
+  .btn-register {
+    @apply bg-secondary text-primary;
+  }
+  .btn-google {
+    @apply bg-white text-slate-600;
+  }
+  
+}

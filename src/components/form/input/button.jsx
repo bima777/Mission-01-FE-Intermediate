@@ -2,7 +2,7 @@ const button = (props) => {
 
     return (
         <div className="container flex">
-            <input className="" type="submit" value={props.label} />
+            <input className={props.className} type="submit" value={props.label} />
         </div>
     )
 }
