@@ -3,9 +3,12 @@ import FormLogin from '../components/form-login.jsx';
 const Login = () => {
 
     return (
-        <div className="container">
-            <FormLogin/>
-        </div>
+        
+      
+            <div className='flex bg-black w-screen justify-center items-center'>
+                    <FormLogin/>
+            </div>
+      
     )   
 }
 
