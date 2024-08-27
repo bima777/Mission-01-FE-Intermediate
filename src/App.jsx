@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 
 import LoginPage from './pages/login.jsx';
+import RegisterPage from './pages/register.jsx'
 
 const App = () => {
 
@@ -15,6 +16,10 @@ const App = () => {
     {
       path: "/login",
       element: <LoginPage/>
+    },
+    {
+      path: "/register",
+      element: <RegisterPage/>
     }
   ]);
 

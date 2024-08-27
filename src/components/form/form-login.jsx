@@ -1,6 +1,6 @@
-import Input from './form/input/input.jsx';
-import Button from './form/input/button.jsx';
-import Header from './header/index.jsx';
+import Input from './input/input.jsx';
+import Button from './input/button.jsx';
+import Header from '../header/index.jsx';
 
 const FormLogin = () => {
     return (

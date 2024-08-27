@@ -1,4 +1,4 @@
-import FormLogin from '../components/form-login.jsx';
+import FormLogin from '../components/form/form-login.jsx';
 import Nav from '../components/nav/index.jsx';
 const Login = () => {
 
