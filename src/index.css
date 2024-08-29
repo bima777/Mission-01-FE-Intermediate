@@ -12,6 +12,14 @@
     @apply font-poppins font-bold text-[32px]/[35.2px] text-slate-900 text-center;
   }
 
+  h4 {
+    @apply font-poppins font-semibold text-2xl/[28.8px] text-primary;
+  }
+
+  h6 {
+    @apply font-poppins font-semibold text-lg/[21.6px] text-slate-900;
+  }
+
   label {
     @apply font-sans font-normal text-base/[22.4px] text-slate-600;
   }
@@ -43,6 +51,25 @@
 
   .btn-banner {
     @apply bg-primary text-white h-[42px] w-[369px] mx-auto gap-2 px-[26px] py-[10px];
+  }
+
+  .text-banner {
+    @apply font-sans font-medium text-base/[22.4px] text-white text-center;
+  }
+
+  .text-home {
+    @apply font-sans font-medium text-base/[22.4px] text-slate-500;
+  }
+
+  .text-author {
+    @apply font-sans font-normal text-sm/[19.6px] text-slate-900;
+  }
+
+  .text-job {
+    @apply font-sans font-normal text-sm/[19.6px] text-slate-500;
+  }
+  .text-hfooter {
+    @apply font-sans font-bold text-lg/[25.2px] text-slate-950;
   }
   
 }

@@ -11,7 +11,7 @@ const Banner = (props) => {
                 <div className='flex flex-col w-full justify-center items-center mb-3'>
                     <Header1 header={props.header}/>
                     <div className='mt-3 p-0'>
-                        <p className='font-sans font-medium text-base/[22.4px] text-white text-center'>
+                        <p className='text-banner'>
                         {props.desc}
                         </p>
                     </div>
