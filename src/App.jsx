@@ -3,8 +3,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import LoginPage from './pages/login.jsx';
+import LoginPage from './pages/login.jsx'
 import RegisterPage from './pages/register.jsx'
+import HomePage from './pages/home.jsx'
 
 const App = () => {
 
@@ -20,6 +21,10 @@ const App = () => {
     {
       path: "/register",
       element: <RegisterPage/>
+    },
+    {
+      path: "/home",
+      element: <HomePage/>
     }
   ]);
 

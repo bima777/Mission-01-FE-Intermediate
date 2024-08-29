@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+
+  h1 {
+    @apply font-poppins font-bold text-[48px]/[52.8px] text-white text-center;
+  }
+
   h3 {
     @apply font-poppins font-bold text-[32px]/[35.2px] text-slate-900 text-center;
   }
@@ -20,20 +25,24 @@
   }
 
   input[type="submit"] {
-    @apply font-sans font-bold text-base/[22.4px] gap-4 border-0 rounded-[10px] h-[42px] w-full cursor-pointer;
+    @apply font-sans font-bold text-base/[22.4px] gap-4 border-0 rounded-[10px] cursor-pointer;
   }
 }
 
 @layer components {
   .btn-login {
-    @apply bg-primary text-white;
+    @apply bg-primary text-white h-[42px] w-full;
   }
 
   .btn-register {
-    @apply bg-secondary text-primary;
+    @apply bg-secondary text-primary h-[42px] w-full;
   }
   .btn-google {
-    @apply bg-white text-slate-600;
+    @apply bg-white text-slate-600 h-[42px] w-full;
+  }
+
+  .btn-banner {
+    @apply bg-primary text-white h-[42px] w-[369px] mx-auto gap-2 px-[26px] py-[10px];
   }
   
 }
