@@ -1,5 +1,5 @@
-import { Header1 } from '../header/index.jsx';
-import Button from '../../components/form/input/button.jsx'
+import Button from '../../components/form/input/button.jsx';
+
 
 
 const Banner = (props) => {
@@ -7,16 +7,16 @@ const Banner = (props) => {
     return (   
     
        
-            <div className='bg-black bg-cover bg-center rounded-[10px] h-[400px] w-full py-[82px] px-[140px]'>
-                <div className='flex flex-col w-full justify-center items-center mb-3'>
-                    <Header1 header={props.header}/>
-                    <div className='mt-3 p-0'>
+            <div className='bg-[url(src/assets/banner/banner-01.jpeg)] bg-cover bg-center rounded-[10px] h-[400px] w-full'>
+                <div className='flex flex-col w-full justify-center items-center text-center mb-3 px-[140px] py-[20px] gap-6'>
+                    <div className='flex flex-col gap-3'>
+                    <h1>{props.header}</h1>
                         <p className= 'text-banner'>
                         {props.desc}
                         </p>
                     </div>
-                </div>
                 <Button className="btn-banner" label={props.button} />
+                </div>
             </div>
      
     )
@@ -24,12 +24,12 @@ const Banner = (props) => {
 const BannerCTA = (props) => {
 
     return (   
-            <div className='flex items-center justify-center bg-black bg-cover bg-center rounded-[10px] h-[400px] w-full py-[82px] px-[140px]'>
-                <div className='bg-sky-200 flex flex-col w-[525px] justify-center mb-3 gap-10'>
+            <div className='flex items-center justify-center bg-[url(src/assets/banner/banner-02.jpeg)] bg-cover bg-center rounded-[10px] h-[400px] w-full'>
+                <div className='flex flex-col w-[525px] justify-center mb-3 gap-10'>
                     <div className='flex flex-col gap-1 '>
-                        <p className='text-hbanner'>Tes</p>
-                        <Header1 header="Oke"/>
-                        <p className='text-banner'>Tes</p>
+                        <p className='text-hbanner'>{props.title}</p>
+                        <h3 class='text-center text-white'>{props.header}</h3>
+                        <p className='text-banner'>{props.desc}</p>
                     </div>
                 <div className='relative'>
                     <div class="h-[58px]">

@@ -1,13 +1,12 @@
 import Input from './input/input.jsx';
 import Button from './input/button.jsx';
-import Header from '../header/index.jsx';
 
 const FormLogin = () => {
     return (
         <div className="container w-screen h-screen flex items-center justify-center">
             <div className='bg-white border-form p-8 rounded-lg shadow-lg w-full max-w-md'>
                 <form action="" method="post" className="space-y-4">
-                    <Header header="Masuk ke Akun"/>
+                    <h3>"Masuk ke Akun"</h3>
                     <p className="text-center font-sans font-normal text-base/[22.4px]">Yuk, lanjutin belajarmu di videobelajar</p>
                     <Input label="Username" type="text" name="username" id="username" />
                     <Input label="Kata Sandi" type="password" name="password" id="password" />

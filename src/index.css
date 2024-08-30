@@ -5,11 +5,11 @@
 @layer base {
 
   h1 {
-    @apply font-poppins font-bold text-[48px]/[52.8px] text-white text-center;
+    @apply font-poppins font-bold text-[48px]/[52.8px] text-white;
   }
 
   h3 {
-    @apply font-poppins font-bold text-[32px]/[35.2px] text-slate-900 text-center;
+    @apply font-poppins font-bold text-[32px]/[35.2px] text-slate-900;
   }
 
   h4 {
