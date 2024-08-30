@@ -15,12 +15,12 @@ const NavHome = () => {
     
     return (
 
-        <div className="container flex justify-between items-center px-[120px] py-3">
-            <img src={logo} alt="logo-videobelajar"/>
-            <div className="flex items-center">
-                <p>Kategori</p>
-                <img src={profile} alt="profile"/>
+        <div className="flex w-full bg-white py-3 px-[120px] gap-9">
+            <div className="flex justify-between items-center w-[1120px]">
+                <img src={logo} alt="logo-videobelajar"/>
+                <a href='#'>Kategori</a>
             </div>
+                <img src={profile} alt="profile"/>
         </div>
     )
 }

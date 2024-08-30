@@ -29,7 +29,7 @@
   input[type = "tel"],
   input[type = "password"]
    {
-    @apply px-[10px] py-1 h-12 w-full border rounded-md;
+    @apply px-[10px] py-1 h-full w-full border rounded-md;
   }
 
   input[type="submit"] {
@@ -53,6 +53,11 @@
     @apply bg-primary text-white h-[42px] w-[369px] mx-auto gap-2 px-[26px] py-[10px];
   }
 
+  .btn-cta {
+    @apply bg-yellow-500 text-white h-full w-full mx-auto rounded-[10px];
+  }
+
+
   .text-banner {
     @apply font-sans font-medium text-base/[22.4px] text-white text-center;
   }
@@ -68,6 +73,15 @@
   .text-job {
     @apply font-sans font-normal text-sm/[19.6px] text-slate-500;
   }
+
+  .text-office {
+    @apply font-sans font-bold text-sm/[[19.6px]] text-slate-500
+  }
+
+  .text-hbanner {
+    @apply font-sans font-bold text-lg/[25.2px] text-slate-400 text-center;
+  }
+
   .text-hfooter {
     @apply font-sans font-bold text-lg/[25.2px] text-slate-950;
   }

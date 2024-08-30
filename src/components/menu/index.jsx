@@ -1,7 +1,7 @@
 const Menu = () => {
     return (
         <div>
-            <ul className="flex">
+            <ul className="flex text-home">
                 <li>
                     <a className="inline-block py-3 pr-9 pl-0" href="#">Semua Kelas</a>
                 </li>

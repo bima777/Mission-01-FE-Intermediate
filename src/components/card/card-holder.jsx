@@ -23,80 +23,94 @@ import ava9 from '/src/assets/ava-photos/9.png';
 
 const CardHolder = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <Card
-                image={card1}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava1}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card2}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava2}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card3}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava3}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card4}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava4}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card5}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava5}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card6}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava6}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card7}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava7}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card8}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava8}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-            <Card
-                image={card9}
-                header="Koleksi Video Pelajaran"
-                desc="Jelajahi dunia pengetahuan melalui pilihan kami"
-                ava={ava9}
-                author="Dokter Umum"
-                job="Dokter Umum"
-            />
-        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid gap-6">
+                <Card
+                    image={card1}
+                    header="Card 1"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava1}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card4}
+                    header="Card 4"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava4}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card7}
+                    header="Card 7"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava7}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+            </div>
+            <div className="grid gap-6">
+                <Card
+                    image={card2}
+                    header="Card 2"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava2}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card5}
+                    header="Card 5"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava5}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card8}
+                    header="Card 8"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava8}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+            </div>
+            <div className="grid gap-6">
+                <Card
+                    image={card3}
+                    header="Card 3"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava3}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card6}
+                    header="Card 6"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava6}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+                <Card
+                    image={card9}
+                    header="Card 9"
+                    desc="Jelajahi dunia pengetahuan melalui pilihan kami"
+                    ava={ava9}
+                    author="Dokter Umum"
+                    job="Dokter Umum"
+                    office="Hospital"
+                />
+            </div>
         </div>
     )
 }
