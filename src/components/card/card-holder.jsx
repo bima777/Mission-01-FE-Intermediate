@@ -24,6 +24,7 @@ import ava9 from '/src/assets/ava-photos/9.png';
 const CardHolder = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card Baris-1 */}
             <div className="grid gap-6">
                 <Card
                     image={card1}
@@ -38,6 +39,7 @@ const CardHolder = () => {
                     ava={ava7}
                 />
             </div>
+            {/* Card Baris-2 */}
             <div className="grid gap-6">
                 <Card
                     image={card2}
@@ -52,6 +54,7 @@ const CardHolder = () => {
                     ava={ava8}
                 />
             </div>
+            {/* Card Baris-3 */}
             <div className="grid gap-6">
                 <Card
                     image={card3}

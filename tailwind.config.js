@@ -15,6 +15,9 @@ export default {
         'secondary': '#E2FCD9',
         'form': '#F1F1F1',
       },
+      screens: {
+        'hp' : '360px', // Responsive untuk HP (referensi samsung galaxy S8+)
+      }
     },
   },
   plugins: [],

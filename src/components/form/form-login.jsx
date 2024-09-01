@@ -1,20 +1,49 @@
-import Input from './input/input.jsx';
-import Button from './input/button.jsx';
+import logoGoogle from '../../assets/logos/logos_google-icon.png';
+import hidePass from '../../assets/form/mdi_eye-off.png'; //Icon untuk menutup kata sandi
 
 const FormLogin = () => {
     return (
-        <div className="container w-screen h-screen flex items-center justify-center">
-            <div className='bg-white border-form p-8 rounded-lg shadow-lg w-full max-w-md'>
+        <div className="flex items-center justify-center w-full">
+            <div className='flex flex-col bg-white border-form p-9 rounded-[4px] shadow-lg w-[590px] gap-9'>
+                <div className='flex flex-col gap-[10px]'>
+                    <h3 className='text-center'>Masuk ke Akun</h3>
+                    <p className="text-center text-input">Yuk, lanjutin belajarmu di videobelajar</p>
+                </div>
                 <form action="" method="post" className="space-y-4">
-                    <h3>"Masuk ke Akun"</h3>
-                    <p className="text-center font-sans font-normal text-base/[22.4px]">Yuk, lanjutin belajarmu di videobelajar</p>
-                    <Input label="Username" type="text" name="username" id="username" />
-                    <Input label="Kata Sandi" type="password" name="password" id="password" />
-                    <a href="#" className="flex font-sans font-medium w-fit text-slate-600 text-base/[22.4px]">Lupa kata sandi?</a>
-                    <Button className ="btn-login" label="Masuk" />
-                    <Button className ="btn-register" label="Daftar" />
-                    <p className="text-center">atau</p>
-                    <Button className ="btn-google" label="Masuk dengan Google" />
+                    <div>
+                        <label htmlFor="email" className="text-input">
+                            <div className='flex gap-1'>
+                                E-Mail
+                                <p className='text-red-600'>*</p>
+                            </div>
+                        </label>
+                        <input type="email" name="email" id="email" className='input-form' />
+                    </div>
+                    <div className='relative'>
+                        <label htmlFor="password" className="text-input">
+                        <div className='flex gap-1'>
+                            Kata Sandi
+                            <p className='text-red-600'>*</p>
+                        </div>
+                        </label>
+                        <input type="password" name="password" id="password" className="pr-10 input-form"/> 
+                        <img src={hidePass} alt="hide-password" className="absolute right-3 hp:top-7 lg:top-9 cursor-pointer" />
+                    </div>
+                    
+                    <div className="w-full text-right">
+                        <a href="#" className="text-home">Lupa Password?</a>
+                    </div>
+                    
+                    <button type='submit' className="btn-login text-button">Masuk</button>
+                    <button type='submit' className="btn-register text-button">Daftar</button>
+                    
+                    <p className="text-input text-center">atau</p>
+                    <button type='submit' className="btn-google">
+                        <div className="flex justify-center gap-2 px-[26px] py-2">
+                            <img src={logoGoogle} alt="logo-google" />
+                            <p className="text-button text-slate-600">Masuk dengan Google</p>
+                        </div>
+                    </button>
                 </form>
             </div>
         </div>

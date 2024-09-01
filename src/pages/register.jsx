@@ -1,14 +1,24 @@
+import { useEffect } from "react";
 import Nav from '../components/nav/index.jsx';
 import FormRegister from '../components/form/form-register.jsx';
-import { Form } from 'react-router-dom';
+
 
 const register = () => {
+    
+        useEffect(() => {
+                document.title = "Register - videobelajar"; //untuk judul tab browser
+        },[]);
+        
+        return (
 
-    return (
-
-        <div className='flex w-screen justify-center items-center flex-col'>
-            <Nav/>
-            <FormRegister/>
+        <div className='container mx-auto'>
+            <div className='flex flex-wrap'>
+                <Nav/> {/* Untuk navbar */}
+                <div className='flex flex-col w-full hp:px-5 hp:py-7 hp:gap-6 lg:px-[120px] lg:py-20 lg:gap-9'>
+                    <FormRegister/> {/* Untuk form-register */}
+                </div>
+            </div>
+            
         </div>
     )
 }
